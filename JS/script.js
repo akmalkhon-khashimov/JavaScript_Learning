@@ -19,9 +19,11 @@ let moviedb = {
 };
 
 for(let i=0;i<numberOfFilms;i++){
-    moviedb.movies[prompt("What is the name of the movie ?")] = +prompt("what rating would you give out of 5 ?");
+    let k=prompt("What is the name of the movie ?");
+    let m = +prompt("what rating would you give out of 5 ?");
+    moviedb.movies[k] = m;
 }
 
-for(;i<numberOfFilms;i++){
+for(let i ;i<numberOfFilms;i++){
     document.write(moviedb.movies[i]);
 }
