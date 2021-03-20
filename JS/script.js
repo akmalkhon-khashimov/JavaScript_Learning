@@ -229,14 +229,17 @@
 // }
 // funf(second);
 const car = {
-    name:"",
-    length: 0,
-    width: 0,
-    height: 0,
-    producer: "",
+    name:"Subaru",
+    length: 10,
+    width: 20,
+    height: 30,
+    producer: "Volvo",
     colors: {
-        border: "",
-        background:""
+        border: "Red",
+        background:"Black"
+    },
+    myfun:function(loot){
+        console.log(`We got the loot:${loot}`);
     }
 };
 // console.log(car.name);
@@ -249,14 +252,28 @@ const car = {
 //     console.log(`What's that ? It's ${key}`);
 //     console.log(`and it's value is ${car[key]}`);
 // }
+// let ctr = 0;
 // for( let key in car){
 //     if(typeof(car[key])==='object'){
 //         for(let i in car[key]){
 //             console.log(`The ${key} has value ${car[key][i]}`);
+//             ctr++;
 //         }
 //     }
 //     else{
 //         console.log(`The ${key} has value ${car[key]}`);
+//         ctr++;
 //     }
 // }
-console.log(car[name];)
+// console.log(ctr);
+
+// console.log(car["name"]);
+//to get the keys into an array:
+//to see the number of keys:
+// console.log(Object.keys(car).length);
+// let temp = "gold";
+// car.myfun(temp);
+
+//DESTRUCTURIZATION
+// const {border,background}=car.colors;
+// console.log(border,background);
